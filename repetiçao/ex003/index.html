@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex003 | Oi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body class="page-exercise">
+    <main class="exercise-wrap">
+        <article class="exercise-card">
+            <h1 class="exercise-title">Oi</h1>
+            <p class="exercise-desc">Digite seu nome no campo e envie para ver a saudação “Oi, [nome]!” na área de resultado.</p>
+            <div class="exercise-field">
+                <label class="exercise-label" for="nomeInput">Seu nome</label>
+                <input class="exercise-input" type="text" id="nomeInput" name="nome" placeholder="Ex.: Maria" autocomplete="name">
+            </div>
+            <div class="exercise-actions">
+                <button type="button" class="btn-exercise" onclick="dizerOi()">Dizer oi</button>
+            </div>
+            <div id="resultado" class="exercise-result" role="status" aria-live="polite">
+                <span class="exercise-placeholder">A resposta aparecerá aqui.</span>
+            </div>
+        </article>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,13 +1,14 @@
-function enviarBoasVindas() {
-    var r = document.getElementById("resultado");
-    var nome = document.getElementById("nomeInput").value.trim();
-    if (!nome) {
-        r.textContent = "Por favor, digite seu nome no campo acima.";
-        r.classList.remove("is-filled");
-        return;
-    }
-    r.textContent =
-        "Seja bem-vindo(a), " + nome + "!\n\n" +
-        "Ficamos felizes em ter você no curso de TADS.";
-    r.classList.add("is-filled");
+function mostrarResultado(texto) {
+    var resultado = document.getElementById("resultado");
+    resultado.textContent = texto;
+    resultado.classList.add("is-filled");
+    alert(texto);
+}
+
+function executarExercicio() {
+    var hora = Number(prompt("Que horas sao? (0 a 23):"));
+    if (hora >= 0 && hora <= 11) return mostrarResultado("Bom dia!");
+    if (hora >= 12 && hora <= 17) return mostrarResultado("Boa tarde!");
+    if (hora >= 18 && hora <= 23) return mostrarResultado("Boa noite!");
+    return mostrarResultado("Hora invalida.");
 }

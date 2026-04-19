@@ -6,7 +6,7 @@ function mostrarResultado(texto) {
 }
 
 function executarExercicio() {
-    var numero = Number(prompt("Digite um numero inteiro:"));
-    var tipo = numero % 2 === 0 ? "par" : "impar";
-    mostrarResultado(`O numero ${numero} e ${tipo}.`);
+    var ano = Number(prompt("Digite um ano:"));
+    var ehBissexto = (ano % 4 === 0 && ano % 100 !== 0) || ano % 400 === 0;
+    mostrarResultado(ehBissexto ? `O ano ${ano} e bissexto.` : `O ano ${ano} nao e bissexto.`);
 }

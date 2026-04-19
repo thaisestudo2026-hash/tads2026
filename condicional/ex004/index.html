@@ -3,24 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ex004 | Nome e boas-vindas</title>
+    <title>ex004 | Saudacao do Sistema</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../style.css">
 </head>
 <body class="page-exercise">
     <main class="exercise-wrap">
         <article class="exercise-card">
-            <h1 class="exercise-title"> Seu nome boas-vindas</h1>
-            <p class="exercise-desc">Preencha seu nome, envie e leia uma mensagem de boas-vindas formatada na caixa de resultado.</p>
-            <div class="exercise-field">
-                <label class="exercise-label" for="nomeInput">Seu nome</label>
-                <input class="exercise-input" type="text" id="nomeInput" name="nome" placeholder="Como podemos te chamar?" autocomplete="name">
-            </div>
+            <h1 class="exercise-title">ex004 | Saudacao do Sistema</h1>
+            <p class="exercise-desc">Saudacao de acordo com a hora (0 a 23).</p>
             <div class="exercise-actions">
-                <button type="button" class="btn-exercise" onclick="enviarBoasVindas()">Enviar</button>
+                <button type="button" class="btn-exercise" onclick="executarExercicio()">Executar</button>
             </div>
             <div id="resultado" class="exercise-result" role="status" aria-live="polite">
-                <span class="exercise-placeholder">A mensagem de boas-vindas aparecerá aqui.</span>
+                <span class="exercise-placeholder">A resposta aparecera aqui.</span>
             </div>
         </article>
     </main>

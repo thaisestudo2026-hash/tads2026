@@ -6,8 +6,8 @@ function mostrarResultado(texto) {
 }
 
 function executarExercicio() {
-    var n = Number(prompt("Digite um inteiro positivo N:"));
-    var soma = 0;
-    for (var i = 1; i <= n; i++) soma += i;
-    mostrarResultado(`A soma de 1 ate ${n} e ${soma}.`);
+    var n = Number(prompt("Digite um numero inteiro:"));
+    var fat = 1;
+    for (var i = n; i >= 1; i--) fat *= i;
+    mostrarResultado(`Fatorial de ${n} = ${fat}.`);
 }

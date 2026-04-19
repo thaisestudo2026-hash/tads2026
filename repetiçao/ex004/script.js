@@ -1,13 +1,12 @@
-function enviarBoasVindas() {
-    var r = document.getElementById("resultado");
-    var nome = document.getElementById("nomeInput").value.trim();
-    if (!nome) {
-        r.textContent = "Por favor, digite seu nome no campo acima.";
-        r.classList.remove("is-filled");
-        return;
-    }
-    r.textContent =
-        "Seja bem-vindo(a), " + nome + "!\n\n" +
-        "Ficamos felizes em ter você no curso de TADS.";
-    r.classList.add("is-filled");
+function mostrarResultado(texto) {
+    var resultado = document.getElementById("resultado");
+    resultado.textContent = texto;
+    resultado.classList.add("is-filled");
+    alert(texto);
+}
+
+function executarExercicio() {
+    var pares = [];
+    for (var i = 2; i <= 50; i += 2) pares.push(i);
+    mostrarResultado(`Pares de 1 a 50:\n${pares.join(", ")}`);
 }

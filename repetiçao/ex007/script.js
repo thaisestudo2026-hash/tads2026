@@ -6,8 +6,7 @@ function mostrarResultado(texto) {
 }
 
 function executarExercicio() {
-    var n = Number(prompt("Digite um inteiro positivo N:"));
-    var soma = 0;
-    for (var i = 1; i <= n; i++) soma += i;
-    mostrarResultado(`A soma de 1 ate ${n} e ${soma}.`);
+    var fib = [0, 1];
+    for (var i = 2; i < 10; i++) fib.push(fib[i - 1] + fib[i - 2]);
+    mostrarResultado(`Primeiros 10 termos:\n${fib.join(", ")}`);
 }

@@ -5,9 +5,8 @@ function mostrarResultado(texto) {
     alert(texto);
 }
 
+function matrizParaTexto(matriz) { return matriz.map((l) => l.join(" ")).join("\n"); }
 function executarExercicio() {
-    var n = Number(prompt("Digite um inteiro positivo N:"));
-    var soma = 0;
-    for (var i = 1; i <= n; i++) soma += i;
-    mostrarResultado(`A soma de 1 ate ${n} e ${soma}.`);
+    var m = [[1,2,3],[4,5,6],[7,8,9]];
+    mostrarResultado(`Matriz:\n${matrizParaTexto(m)}`);
 }

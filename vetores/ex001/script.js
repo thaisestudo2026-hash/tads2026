@@ -6,8 +6,6 @@ function mostrarResultado(texto) {
 }
 
 function executarExercicio() {
-    var n = Number(prompt("Digite um inteiro positivo N:"));
-    var soma = 0;
-    for (var i = 1; i <= n; i++) soma += i;
-    mostrarResultado(`A soma de 1 ate ${n} e ${soma}.`);
+    var amigos = ["Ana", "Bruno", "Carla", "Diego", "Elisa"];
+    mostrarResultado(`Convidados:\n${amigos.join("\n")}`);
 }
